@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kid Story Profile Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffeaf4, #f5f7fa);
+      margin: 0;
+      padding: 20px 10px;
+      color: #333;
+    }
+
+    .card {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+      padding: 30px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #e91e63;
+      margin-bottom: 8px;
+      font-size: 24px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #777;
+      margin-bottom: 25px;
+      font-size: 14px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 6px;
+      color: #444;
+      font-size: 14px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 14px;
+      background: #fdfdfd;
+      box-sizing: border-box;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: #ec407a;
+      background: #fff;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .row .form-group {
+      flex: 1 1 100%;
+      min-width: 0;
+    }
+
+    @media (min-width: 600px) {
+      .card {
+        padding: 40px 30px;
+      }
+      
+      h1 {
+        font-size: 28px;
+      }
+      
+      .subtitle {
+        font-size: 16px;
+      }
+      
+      .form-group {
+        margin-bottom: 20px;
+      }
+      
+      .row.two-cols .form-group {
+        flex: 1 1 calc(50% - 8px);
+      }
+      
+      input, select, textarea {
+        padding: 12px;
+      }
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 14px;
+      background: #ec407a;
+      color: white;
+      border: none;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #d81b60;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>🎀 Kid Story Profile Form</h1>
+    <p class="subtitle">Enter all the fun details for your magical story</p>
+
+    <form>
+
+      <div class="row two-cols">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div class="form-group">
+          <label for="nickname">Nickname</label>
+          <input type="text" id="nickname" name="nickname" />
+        </div>
+      </div>
+
+      <div class="row two-cols">
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" />
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender">
+            <option value="">Select...</option>
+            <option>Female</option>
+            <option>Male</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="hobby">Hobby</label>
+        <input type="text" id="hobby" name="hobby" />
+      </div>
+
+      <div class="form-group">
+        <label for="favoriteAnimal">Favorite Animal</label>
+        <input type="text" id="favoriteAnimal" name="favoriteAnimal" />
+      </div>
+
+      <div class="form-group">
+        <label for="heroChallenges">Hero Challenges</label>
+        <input type="text" id="heroChallenges" name="heroChallenges" />
+      </div>
+
+      <div class="form-group">
+        <label for="favoriteColor">Favorite Color</label>
+        <input type="text" id="favoriteColor" name="favoriteColor" />
+      </div>
+
+      <div class="form-group">
+        <label for="theme">Theme</label>
+        <input type="text" id="theme" name="theme" />
+      </div>
+
+      <div class="row two-cols">
+        <div class="form-group">
+          <label for="skinColor">Skin Color</label>
+          <input type="text" id="skinColor" name="skinColor" />
+        </div>
+        <div class="form-group">
+          <label for="eyeColor">Eye Color</label>
+          <input type="text" id="eyeColor" name="eyeColor" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="adventureType">Adventure Type</label>
+        <input type="text" id="adventureType" name="adventureType" />
+      </div>
+
+      <div class="form-group">
+        <label for="favoriteGenre">Favorite Genre</label>
+        <input type="text" id="favoriteGenre" name="favoriteGenre" />
+      </div>
+
+      <div class="row two-cols">
+        <div class="form-group">
+          <label for="hairColor">Hair Color</label>
+          <input type="text" id="hairColor" name="hairColor" />
+        </div>
+        <div class="form-group">
+          <label for="hairLength">Hair Length</label>
+          <input type="text" id="hairLength" name="hairLength" />
+        </div>
+      </div>
+
+      <div class="row two-cols">
+        <div class="form-group">
+          <label for="height">Height</label>
+          <input type="text" id="height" name="height" />
+        </div>
+        <div class="form-group">
+          <label for="favoriteHero">Favorite Super Hero</label>
+          <input type="text" id="favoriteHero" name="favoriteHero" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="surprise">Surprise Element in the Story</label>
+        <input type="text" id="surprise" name="surprise" />
+      </div>
+
+      <div class="form-group">
+        <label for="villain">Need a Villain or Obstacle?</label>
+        <select id="villain" name="villain">
+          <option value="">Select...</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <button type="submit">✨ Create Story</button>
+    </form>
+  </div>
+
+</body>
+</html>
